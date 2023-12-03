@@ -3,7 +3,7 @@ languageCode: zh-tw
 theme: hugo-theme-stack
 paginate: 5
 title: Bob's Blog
-copyright: BobChen3310
+copyright: 由 BobChen 維護
 
 languages:
     zh-tw:
