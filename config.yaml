@@ -39,7 +39,7 @@ params:
     favicon: /favicon.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
-        since: 2020
+        since: 2022
         customText:
 
     dateFormat:
@@ -78,11 +78,11 @@ params:
             emitMetadata: 0
 
         gitalk:
-            owner:
-            admin:
-            repo:
-            clientID:
-            clientSecret:
+            owner: BobChen3310
+            admin: BobChen3310
+            repo: blog-comments
+            clientID: 36b855d26b00813571ea
+            clientSecret: 8480f53cc5e963635c51c42ca29db0494e822cb2
 
     widgets:
         homepage:
@@ -135,7 +135,7 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/BobChen3310
+          url: https://github.com/BobChen3310/
           params:
               icon: brand-github
 

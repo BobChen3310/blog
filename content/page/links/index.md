@@ -25,11 +25,6 @@ links:
     website: https://cxuan.me/
     image: ./cx.jpg
 
-  - title: 狀態監測
-    description: Bob的服務狀態監測
-    website: https://status.bob0623.com/
-    image: ./kuma.png
-
 menu:
     main: 
         weight: 5
