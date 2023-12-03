@@ -78,11 +78,11 @@ params:
             emitMetadata: 0
 
         gitalk:
-            owner: 
-            admin: 
-            repo: 
-            clientID: 
-            clientSecret: 
+            owner: BobChen3310
+            admin: BobChen3310
+            repo: blog-comments
+            clientID: 36b855d26b00813571ea
+            clientSecret: 8480f53cc5e963635c51c42ca29db0494e822cb2
 
     widgets:
         homepage:
