@@ -12,6 +12,8 @@ menu:
             icon: user
 ---
 
+## About
+
 **Hi，你好！**
 
 **我是Bob，我是一個在臺灣的大學生，目前在研究Linux以及網頁設計。**
@@ -22,4 +24,20 @@ menu:
 
 **最近在研究 DN42，非常有趣:)**
 
-**若有任何問題，歡迎發信到 larry100002586@gmail.com，或者你有什麼黑科技可以找到我？**
+## Contact
+
+- **Discord: BobChen3310**
+- **Email: [BobChen3310@bob0623.com](mailto:BobChen3310@bob0623.com)**
+- **Email: [larry100002586@gmail.com](mailto:larry100002586@gmail.com)**
+- **Twiiter [BobChen3310](https://twitter.com/BobChen3310/)**
+
+## Skills
+
+- **Linux**
+- **Windows Server**
+- **C++**
+- **C#**
+- **Python**
+- **Network**
+
+![BobChen3310](https://discord-readme-badge.vercel.app/api?id=476186360844124160)

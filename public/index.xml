@@ -25,12 +25,39 @@
         <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
         
         <guid>https://blog.bob0623.com/about/</guid>
-        <description>&lt;p&gt;&lt;strong&gt;Hi，你好！&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Hi，你好！&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;我是Bob，我是一個在臺灣的大學生，目前在研究Linux以及網頁設計。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;平常的興趣就是玩玩GTA、Minecraft，寫Code，主要是C++、C#，以及Python&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;目前我正在研究網路層面，主要是DNS以及防火牆，&lt;del&gt;偶爾也會練個CTF&lt;/del&gt;。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;最近在研究 DN42，非常有趣:)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;若有任何問題，歡迎發信到 &lt;a class=&#34;link&#34; href=&#34;mailto:larry100002586@gmail.com&#34; &gt;larry100002586@gmail.com&lt;/a&gt;，或者你有什麼黑科技可以找到我？&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Discord: BobChen3310&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Email: &lt;a class=&#34;link&#34; href=&#34;mailto:BobChen3310@bob0623.com&#34; &gt;BobChen3310@bob0623.com&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Email: &lt;a class=&#34;link&#34; href=&#34;mailto:larry100002586@gmail.com&#34; &gt;larry100002586@gmail.com&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Twiiter &lt;a class=&#34;link&#34; href=&#34;https://twitter.com/BobChen3310/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;BobChen3310&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Linux&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Windows Server&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;C++&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;C#&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Python&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Network&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://discord-readme-badge.vercel.app/api?id=476186360844124160&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;BobChen3310&#34;
+	
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
