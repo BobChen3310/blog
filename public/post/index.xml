@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Bob&#39;s Blog</title>
+        <link>https://blog.bob0623.com/post/</link>
+        <description>Recent content in Posts on Bob&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <copyright>BobChen3310</copyright>
+        <lastBuildDate>Sat, 02 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.bob0623.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Test</title>
+        <link>https://blog.bob0623.com/p/test/</link>
+        <pubDate>Sat, 02 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.bob0623.com/p/test/</guid>
+        <description>&lt;h2 id=&#34;這是標題&#34;&gt;這是標題&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;跟文章標題一樣，這只是一個測試頁面&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;這是次標題&#34;&gt;這是次標題&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;沒有人說不能加個次標題對吧。&lt;/strong&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

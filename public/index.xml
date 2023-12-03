@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Bob&#39;s Blog</title>
+        <link>https://blog.bob0623.com/</link>
+        <description>Recent content on Bob&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <copyright>BobChen3310</copyright>
+        <lastBuildDate>Sat, 02 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.bob0623.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Test</title>
+        <link>https://blog.bob0623.com/p/test/</link>
+        <pubDate>Sat, 02 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.bob0623.com/p/test/</guid>
+        <description>&lt;h2 id=&#34;這是標題&#34;&gt;這是標題&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;跟文章標題一樣，這只是一個測試頁面&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;這是次標題&#34;&gt;這是次標題&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;沒有人說不能加個次標題對吧。&lt;/strong&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>About</title>
+        <link>https://blog.bob0623.com/about/</link>
+        <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.bob0623.com/about/</guid>
+        <description>&lt;p&gt;&lt;strong&gt;Hi，你好！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我是Bob，我是一個在臺灣的大學生，目前在研究Linux以及網頁設計。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;平常的興趣就是玩玩GTA、Minecraft，寫Code，主要是C++、C#，以及Python&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目前我正在研究網路層面，主要是DNS以及防火牆，&lt;del&gt;偶爾也會練個CTF&lt;/del&gt;。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最近在研究 DN42，非常有趣:)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;若有任何問題，歡迎發信到 &lt;a class=&#34;link&#34; href=&#34;mailto:larry100002586@gmail.com&#34; &gt;larry100002586@gmail.com&lt;/a&gt;，或者你有什麼黑科技可以找到我？&lt;/strong&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://blog.bob0623.com/archives/</link>
+        <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.bob0623.com/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://blog.bob0623.com/links/</link>
+        <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.bob0623.com/links/</guid>
+        <description>&lt;p&gt;&lt;strong&gt;連結，顧名思義就是連結。&lt;/strong&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://blog.bob0623.com/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.bob0623.com/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
