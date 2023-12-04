@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on Bob&#39;s Blog</title>
-        <link>https://blog.bob0623.com/post/</link>
-        <description>Recent content in Posts on Bob&#39;s Blog</description>
+        <title>Git on Bob&#39;s Blog</title>
+        <link>https://blog.bob0623.com/categories/git/</link>
+        <description>Recent content in Git on Bob&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <copyright>由 BobChen 維護</copyright>
-        <lastBuildDate>Mon, 04 Dec 2023 02:00:00 +0800</lastBuildDate><atom:link href="https://blog.bob0623.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 04 Dec 2023 02:00:00 +0800</lastBuildDate><atom:link href="https://blog.bob0623.com/categories/git/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>如何用 Gitea 快速建立本地 Git Server</title>
         <link>https://blog.bob0623.com/p/gitea-setup/</link>
         <pubDate>Mon, 04 Dec 2023 02:00:00 +0800</pubDate>
@@ -18,18 +18,6 @@
     &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;警告！此文章尚未完成！&lt;/p&gt;&lt;/div&gt;
 
 &lt;p&gt;Gitea 是一套極易架設的 Git 服務&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Test</title>
-        <link>https://blog.bob0623.com/p/test/</link>
-        <pubDate>Sat, 02 Dec 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.bob0623.com/p/test/</guid>
-        <description>&lt;h2 id=&#34;這是標題&#34;&gt;這是標題&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;跟文章標題一樣，這只是一個測試頁面&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;這是次標題&#34;&gt;這是次標題&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;沒有人說不能加個次標題對吧。&lt;/strong&gt;&lt;/p&gt;
 </description>
         </item>
         
