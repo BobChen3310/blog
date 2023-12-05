@@ -179,7 +179,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;之後可以再設定 Nginx 進行反向代理以及 HTTPS 的功能&lt;/p&gt;
-&lt;h3 id=&#34;參考連結&#34;&gt;參考連結&lt;/h3&gt;
+&lt;h2 id=&#34;參考連結&#34;&gt;參考連結&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.gitea.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Documentation | Gitea&lt;/a&gt;&lt;/li&gt;

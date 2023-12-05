@@ -112,6 +112,6 @@ systemctl start gitea
 
 之後可以再設定 Nginx 進行反向代理以及 HTTPS 的功能
 
-### 參考連結
+## 參考連結
 
 - [Documentation | Gitea](https://docs.gitea.com/)
