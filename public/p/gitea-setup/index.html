@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="zh-tw" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='警告！此文章尚未完成！
-Gitea 是一套極易架設的 Git 服務'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='前言 Gitea 是一套極易架設的 Git 服務，前幾天在研究 DN42 時意外發現了這個平台，有著跟 Github 類似的風格，以及中文化 (少部分翻譯未完善)，而且翻閱了官方文檔後發現架設方法相當的簡單，花了點時間研究後就架起來了
+安裝方式 Gitea 官方提供了很多的安裝方式，如下：
+From Binary From Package From Source From Docker 我個人偏好使用 Binary 的方式安裝，當然並不是最快的，只是我懶得安裝 Docker :)
+開始 首先要先下載 Binary，並且給予執行的權限
+1 2 wget -O gitea https://dl.gitea.com/gitea/1.21.1/gitea-1.21.1-linux-amd64 chmod &#43;x gitea 注意!上述指令僅適用於x86_64架構的機器，如要其他版本至此下載
+接著安裝 Git (如果未安裝)，官方要求 Git 版本需 &amp;gt;= 2.0
+1 apt install git -y 然後建立使用者來運行 Gitea (e.g git)
+1 2 3 4 5 6 7 8 adduser \ --system \ --shell /bin/bash \ --gecos &amp;#39;Git Version Control&amp;#39; \ --group \ --disabled-password \ --home /home/git \ git 建立關聯資料夾'>
 <title>如何用 Gitea 快速建立本地 Git Server</title>
 
 <link rel='canonical' href='https://blog.bob0623.com/p/gitea-setup/'>
 
 <link rel="stylesheet" href="/scss/style.min.43c500da7919a6852e25a640bb95768b600a8529deaff7e254b26c305f885222.css"><meta property='og:title' content='如何用 Gitea 快速建立本地 Git Server'>
-<meta property='og:description' content='警告！此文章尚未完成！
-Gitea 是一套極易架設的 Git 服務'>
+<meta property='og:description' content='前言 Gitea 是一套極易架設的 Git 服務，前幾天在研究 DN42 時意外發現了這個平台，有著跟 Github 類似的風格，以及中文化 (少部分翻譯未完善)，而且翻閱了官方文檔後發現架設方法相當的簡單，花了點時間研究後就架起來了
+安裝方式 Gitea 官方提供了很多的安裝方式，如下：
+From Binary From Package From Source From Docker 我個人偏好使用 Binary 的方式安裝，當然並不是最快的，只是我懶得安裝 Docker :)
+開始 首先要先下載 Binary，並且給予執行的權限
+1 2 wget -O gitea https://dl.gitea.com/gitea/1.21.1/gitea-1.21.1-linux-amd64 chmod &#43;x gitea 注意!上述指令僅適用於x86_64架構的機器，如要其他版本至此下載
+接著安裝 Git (如果未安裝)，官方要求 Git 版本需 &amp;gt;= 2.0
+1 apt install git -y 然後建立使用者來運行 Gitea (e.g git)
+1 2 3 4 5 6 7 8 adduser \ --system \ --shell /bin/bash \ --gecos &amp;#39;Git Version Control&amp;#39; \ --group \ --disabled-password \ --home /home/git \ git 建立關聯資料夾'>
 <meta property='og:url' content='https://blog.bob0623.com/p/gitea-setup/'>
 <meta property='og:site_name' content='Bob&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Service' /><meta property='article:tag' content='Git' /><meta property='article:published_time' content='2023-12-04T02:00:00&#43;08:00'/><meta property='article:modified_time' content='2023-12-05T02:47:00&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Service' /><meta property='article:tag' content='Git' /><meta property='article:published_time' content='2023-12-04T02:00:00&#43;08:00'/><meta property='article:modified_time' content='2023-12-05T20:40:00&#43;08:00'/>
 <meta name="twitter:title" content="如何用 Gitea 快速建立本地 Git Server">
-<meta name="twitter:description" content="警告！此文章尚未完成！
-Gitea 是一套極易架設的 Git 服務">
+<meta name="twitter:description" content="前言 Gitea 是一套極易架設的 Git 服務，前幾天在研究 DN42 時意外發現了這個平台，有著跟 Github 類似的風格，以及中文化 (少部分翻譯未完善)，而且翻閱了官方文檔後發現架設方法相當的簡單，花了點時間研究後就架起來了
+安裝方式 Gitea 官方提供了很多的安裝方式，如下：
+From Binary From Package From Source From Docker 我個人偏好使用 Binary 的方式安裝，當然並不是最快的，只是我懶得安裝 Docker :)
+開始 首先要先下載 Binary，並且給予執行的權限
+1 2 wget -O gitea https://dl.gitea.com/gitea/1.21.1/gitea-1.21.1-linux-amd64 chmod &#43;x gitea 注意!上述指令僅適用於x86_64架構的機器，如要其他版本至此下載
+接著安裝 Git (如果未安裝)，官方要求 Git 版本需 &amp;gt;= 2.0
+1 apt install git -y 然後建立使用者來運行 Gitea (e.g git)
+1 2 3 4 5 6 7 8 adduser \ --system \ --shell /bin/bash \ --gecos &amp;#39;Git Version Control&amp;#39; \ --group \ --disabled-password \ --home /home/git \ git 建立關聯資料夾">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -227,7 +245,45 @@ Gitea 是一套極易架設的 Git 服務">
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目錄</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#安裝方式">安裝方式</a>
+      <ol>
+        <li><a href="#開始">開始</a></li>
+        <li><a href="#設定">設定</a></li>
+        <li><a href="#參考連結">參考連結</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -302,11 +358,177 @@ Gitea 是一套極易架設的 Git 服務">
     <section class="article-content">
     
     
-    
-<div class="notice notice-warning" >
-    <div class="notice-title"><svg xmlns="http://www.w3.org/2000/svg" class="icon notice-icon" viewBox="0 0 576 512" fill="hsl(0, 65%, 65%)"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"/></svg></div><p>警告！此文章尚未完成！</p></div>
+    <h2 id="前言">前言</h2>
+<p>Gitea 是一套極易架設的 Git 服務，前幾天在研究 DN42 時意外發現了這個平台，有著跟 Github 類似的風格，以及中文化 (少部分翻譯未完善)，而且翻閱了官方文檔後發現架設方法相當的簡單，花了點時間研究後就架起來了</p>
+<h2 id="安裝方式">安裝方式</h2>
+<p>Gitea 官方提供了很多的安裝方式，如下：</p>
+<ul>
+<li><a class="link" href="https://docs.gitea.com/installation/install-from-binary"  target="_blank" rel="noopener"
+    >From Binary</a></li>
+<li><a class="link" href="https://docs.gitea.com/installation/install-from-package"  target="_blank" rel="noopener"
+    >From Package</a></li>
+<li><a class="link" href="https://docs.gitea.com/installation/install-from-source"  target="_blank" rel="noopener"
+    >From Source</a></li>
+<li><a class="link" href="https://docs.gitea.com/installation/install-with-docker"  target="_blank" rel="noopener"
+    >From Docker</a></li>
+</ul>
+<p>我個人偏好使用 Binary 的方式安裝，當然並不是最快的，只是我懶得安裝 Docker :)</p>
+<h3 id="開始">開始</h3>
+<p>首先要先下載 Binary，並且給予執行的權限</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget -O gitea https://dl.gitea.com/gitea/1.21.1/gitea-1.21.1-linux-amd64
+</span></span><span class="line"><span class="cl">chmod +x gitea
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="notice notice-info" >
+    <div class="notice-title"><svg xmlns="http://www.w3.org/2000/svg" class="icon notice-icon" viewBox="0 0 512 512" fill="hsl(30, 80%, 70%)"><path d="M256 8a248 248 0 100 496 248 248 0 000-496zm0 110a42 42 0 110 84 42 42 0 010-84zm56 254c0 7-5 12-12 12h-88c-7 0-12-5-12-12v-24c0-7 5-12 12-12h12v-64h-12c-7 0-12-5-12-12v-24c0-7 5-12 12-12h64c7 0 12 5 12 12v100h12c7 0 12 5 12 12v24z"/></svg></div><p>注意!上述指令僅適用於x86_64架構的機器，如要其他版本至此<a class="link" href="https://github.com/go-gitea/gitea/releases/latest"  target="_blank" rel="noopener"
+    >下載</a></p></div>
 
-<p>Gitea 是一套極易架設的 Git 服務</p>
+<p>接著安裝 Git (如果未安裝)，官方要求 Git 版本需 &gt;= 2.0</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt install git -y
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然後建立使用者來運行 Gitea (e.g <code>git</code>)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">adduser <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>   --system <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>   --shell /bin/bash <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>   --gecos <span class="s1">&#39;Git Version Control&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>   --group <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>   --disabled-password <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>   --home /home/git <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>   git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>建立關聯資料夾</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /var/lib/gitea/<span class="o">{</span>custom,data,log<span class="o">}</span>
+</span></span><span class="line"><span class="cl">chown -R git:git /var/lib/gitea/
+</span></span><span class="line"><span class="cl">chmod -R <span class="m">750</span> /var/lib/gitea/
+</span></span><span class="line"><span class="cl">mkdir /etc/gitea
+</span></span><span class="line"><span class="cl">chown root:git /etc/gitea
+</span></span><span class="line"><span class="cl">chmod <span class="m">770</span> /etc/gitea
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然後把 gitea 丟到 Global Location</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp gitea /usr/local/bin/gitea
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>接著設定服務讓 Gitea 運作，詳細設定請參閱<a class="link" href="https://github.com/go-gitea/gitea/blob/release/v1.21/contrib/systemd/gitea.service"  target="_blank" rel="noopener"
+    >此處</a>，我個人是直接複製貼上，檔案要放在 <code>/etc/systemd/system/gitea.service</code></p>
+
+<div class="notice notice-info" >
+    <div class="notice-title"><svg xmlns="http://www.w3.org/2000/svg" class="icon notice-icon" viewBox="0 0 512 512" fill="hsl(30, 80%, 70%)"><path d="M256 8a248 248 0 100 496 248 248 0 000-496zm0 110a42 42 0 110 84 42 42 0 010-84zm56 254c0 7-5 12-12 12h-88c-7 0-12-5-12-12v-24c0-7 5-12 12-12h12v-64h-12c-7 0-12-5-12-12v-24c0-7 5-12 12-12h64c7 0 12 5 12 12v100h12c7 0 12 5 12 12v24z"/></svg></div><p>注意!似乎是設定的問題，建議將 gitea.service 中的 Service 區塊內的 Type 改為 simple</p></div>
+
+<p>然後讓 Gitea 服務啟動</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl daemon-reload
+</span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span> gitea
+</span></span><span class="line"><span class="cl">systemctl start gitea
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="設定">設定</h3>
+<p>接著瀏覽器打開，瀏覽 <code>http://ip:3000</code> 進行設定</p>
+<p>設定想要用的資料庫，我是選擇 SQLite</p>
+<p><img src="/p/gitea-setup/database.png"
+	width="1139"
+	height="475"
+	srcset="/p/gitea-setup/database_hub25e787bc46cbed957fe77127a15ef6a_34675_480x0_resize_box_3.png 480w, /p/gitea-setup/database_hub25e787bc46cbed957fe77127a15ef6a_34675_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="239"
+		data-flex-basis="575px"
+	
+></p>
+<p>設定域名及 URL，改為你要用的 (e.g <code>example.com</code>)</p>
+<p><img src="/p/gitea-setup/ip.png"
+	width="1108"
+	height="863"
+	srcset="/p/gitea-setup/ip_hua389755cb330f1e8ceeaebfabba50280_44606_480x0_resize_box_3.png 480w, /p/gitea-setup/ip_hua389755cb330f1e8ceeaebfabba50280_44606_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="128"
+		data-flex-basis="308px"
+	
+></p>
+<p>最後選擇管理員帳號，創建一個管理員帳號</p>
+<p><img src="/p/gitea-setup/admin.png"
+	width="1183"
+	height="685"
+	srcset="/p/gitea-setup/admin_hu773e9530092f4d6ee5841b2202afe3d1_31810_480x0_resize_box_3.png 480w, /p/gitea-setup/admin_hu773e9530092f4d6ee5841b2202afe3d1_31810_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="172"
+		data-flex-basis="414px"
+	
+></p>
+<p>然後點擊安裝後等待一小段時間就可以使用 Gitea 了 :)</p>
+<p><img src="/p/gitea-setup/menu.png"
+	width="1920"
+	height="1080"
+	srcset="/p/gitea-setup/menu_hu9fe1bacb09a9445d68fe970c6758df3c_136082_480x0_resize_box_3.png 480w, /p/gitea-setup/menu_hu9fe1bacb09a9445d68fe970c6758df3c_136082_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+<p>之後可以再設定 Nginx 進行反向代理以及 HTTPS 的功能</p>
+<h3 id="參考連結">參考連結</h3>
+<ul>
+<li><a class="link" href="https://docs.gitea.com/"  target="_blank" rel="noopener"
+    >Documentation | Gitea</a></li>
+</ul>
 
 </section>
 
@@ -332,7 +554,7 @@ Gitea 是一套極易架設的 Git 服務">
 
 
         <span>
-            最後更新 Dec 05, 2023 02:47 CST
+            最後更新 Dec 05, 2023 20:40 CST
         </span>
     </section></footer>
 

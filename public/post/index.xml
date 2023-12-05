@@ -13,11 +13,177 @@
         <pubDate>Mon, 04 Dec 2023 02:00:00 +0800</pubDate>
         
         <guid>https://blog.bob0623.com/p/gitea-setup/</guid>
-        <description>
-&lt;div class=&#34;notice notice-warning&#34; &gt;
-    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;警告！此文章尚未完成！&lt;/p&gt;&lt;/div&gt;
+        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;Gitea 是一套極易架設的 Git 服務，前幾天在研究 DN42 時意外發現了這個平台，有著跟 Github 類似的風格，以及中文化 (少部分翻譯未完善)，而且翻閱了官方文檔後發現架設方法相當的簡單，花了點時間研究後就架起來了&lt;/p&gt;
+&lt;h2 id=&#34;安裝方式&#34;&gt;安裝方式&lt;/h2&gt;
+&lt;p&gt;Gitea 官方提供了很多的安裝方式，如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.gitea.com/installation/install-from-binary&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;From Binary&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.gitea.com/installation/install-from-package&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;From Package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.gitea.com/installation/install-from-source&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;From Source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.gitea.com/installation/install-with-docker&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;From Docker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我個人偏好使用 Binary 的方式安裝，當然並不是最快的，只是我懶得安裝 Docker :)&lt;/p&gt;
+&lt;h3 id=&#34;開始&#34;&gt;開始&lt;/h3&gt;
+&lt;p&gt;首先要先下載 Binary，並且給予執行的權限&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget -O gitea https://dl.gitea.com/gitea/1.21.1/gitea-1.21.1-linux-amd64
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod +x gitea
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;notice notice-info&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(30, 80%, 70%)&#34;&gt;&lt;path d=&#34;M256 8a248 248 0 100 496 248 248 0 000-496zm0 110a42 42 0 110 84 42 42 0 010-84zm56 254c0 7-5 12-12 12h-88c-7 0-12-5-12-12v-24c0-7 5-12 12-12h12v-64h-12c-7 0-12-5-12-12v-24c0-7 5-12 12-12h64c7 0 12 5 12 12v100h12c7 0 12 5 12 12v24z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;注意!上述指令僅適用於x86_64架構的機器，如要其他版本至此&lt;a class=&#34;link&#34; href=&#34;https://github.com/go-gitea/gitea/releases/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下載&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
 
-&lt;p&gt;Gitea 是一套極易架設的 Git 服務&lt;/p&gt;
+&lt;p&gt;接著安裝 Git (如果未安裝)，官方要求 Git 版本需 &amp;gt;= 2.0&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt install git -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然後建立使用者來運行 Gitea (e.g &lt;code&gt;git&lt;/code&gt;)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adduser &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;   --system &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;   --shell /bin/bash &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;   --gecos &lt;span class=&#34;s1&#34;&gt;&amp;#39;Git Version Control&amp;#39;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;   --group &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;   --disabled-password &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;   --home /home/git &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;   git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;建立關聯資料夾&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p /var/lib/gitea/&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;custom,data,log&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chown -R git:git /var/lib/gitea/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod -R &lt;span class=&#34;m&#34;&gt;750&lt;/span&gt; /var/lib/gitea/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir /etc/gitea
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chown root:git /etc/gitea
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod &lt;span class=&#34;m&#34;&gt;770&lt;/span&gt; /etc/gitea
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然後把 gitea 丟到 Global Location&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cp gitea /usr/local/bin/gitea
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;接著設定服務讓 Gitea 運作，詳細設定請參閱&lt;a class=&#34;link&#34; href=&#34;https://github.com/go-gitea/gitea/blob/release/v1.21/contrib/systemd/gitea.service&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;此處&lt;/a&gt;，我個人是直接複製貼上，檔案要放在 &lt;code&gt;/etc/systemd/system/gitea.service&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&#34;notice notice-info&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(30, 80%, 70%)&#34;&gt;&lt;path d=&#34;M256 8a248 248 0 100 496 248 248 0 000-496zm0 110a42 42 0 110 84 42 42 0 010-84zm56 254c0 7-5 12-12 12h-88c-7 0-12-5-12-12v-24c0-7 5-12 12-12h12v-64h-12c-7 0-12-5-12-12v-24c0-7 5-12 12-12h64c7 0 12 5 12 12v100h12c7 0 12 5 12 12v24z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;注意!似乎是設定的問題，建議將 gitea.service 中的 Service 區塊內的 Type 改為 simple&lt;/p&gt;&lt;/div&gt;
+
+&lt;p&gt;然後讓 Gitea 服務啟動&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl daemon-reload
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl &lt;span class=&#34;nb&#34;&gt;enable&lt;/span&gt; gitea
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl start gitea
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;設定&#34;&gt;設定&lt;/h3&gt;
+&lt;p&gt;接著瀏覽器打開，瀏覽 &lt;code&gt;http://ip:3000&lt;/code&gt; 進行設定&lt;/p&gt;
+&lt;p&gt;設定想要用的資料庫，我是選擇 SQLite&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.bob0623.com/p/gitea-setup/database.png&#34;
+	width=&#34;1139&#34;
+	height=&#34;475&#34;
+	srcset=&#34;https://blog.bob0623.com/p/gitea-setup/database_hub25e787bc46cbed957fe77127a15ef6a_34675_480x0_resize_box_3.png 480w, https://blog.bob0623.com/p/gitea-setup/database_hub25e787bc46cbed957fe77127a15ef6a_34675_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;239&#34;
+		data-flex-basis=&#34;575px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;設定域名及 URL，改為你要用的 (e.g &lt;code&gt;example.com&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.bob0623.com/p/gitea-setup/ip.png&#34;
+	width=&#34;1108&#34;
+	height=&#34;863&#34;
+	srcset=&#34;https://blog.bob0623.com/p/gitea-setup/ip_hua389755cb330f1e8ceeaebfabba50280_44606_480x0_resize_box_3.png 480w, https://blog.bob0623.com/p/gitea-setup/ip_hua389755cb330f1e8ceeaebfabba50280_44606_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;128&#34;
+		data-flex-basis=&#34;308px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;最後選擇管理員帳號，創建一個管理員帳號&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.bob0623.com/p/gitea-setup/admin.png&#34;
+	width=&#34;1183&#34;
+	height=&#34;685&#34;
+	srcset=&#34;https://blog.bob0623.com/p/gitea-setup/admin_hu773e9530092f4d6ee5841b2202afe3d1_31810_480x0_resize_box_3.png 480w, https://blog.bob0623.com/p/gitea-setup/admin_hu773e9530092f4d6ee5841b2202afe3d1_31810_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;172&#34;
+		data-flex-basis=&#34;414px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;然後點擊安裝後等待一小段時間就可以使用 Gitea 了 :)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.bob0623.com/p/gitea-setup/menu.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1080&#34;
+	srcset=&#34;https://blog.bob0623.com/p/gitea-setup/menu_hu9fe1bacb09a9445d68fe970c6758df3c_136082_480x0_resize_box_3.png 480w, https://blog.bob0623.com/p/gitea-setup/menu_hu9fe1bacb09a9445d68fe970c6758df3c_136082_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;之後可以再設定 Nginx 進行反向代理以及 HTTPS 的功能&lt;/p&gt;
+&lt;h3 id=&#34;參考連結&#34;&gt;參考連結&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.gitea.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Documentation | Gitea&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
