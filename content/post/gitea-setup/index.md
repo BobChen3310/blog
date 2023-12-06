@@ -2,8 +2,9 @@
 title: 如何用 Gitea 快速建立本地 Git Server
 description: 
 slug: gitea-setup
-date: 2023-12-04T02:00:00+08:00
-lastMod: 2023-12-05T20:40:00+08:00
+date: 2023-12-06T13:00:00+08:00
+lastMod: 2023-12-06T13:00:00+08:00
+image: gitea.svg
 categories:
     - Service
     - Git
@@ -37,7 +38,7 @@ chmod +x gitea
 ```
 
 {{< notice notice-info >}}
-注意!上述指令僅適用於x86_64架構的機器，如要其他版本至此[下載](https://github.com/go-gitea/gitea/releases/latest)
+注意!上述指令僅適用於x86_64架構的機器，如要其他版本至此[**下載**](https://github.com/go-gitea/gitea/releases/latest)
 {{< /notice >}}
 
 接著安裝 Git (如果未安裝)，官方要求 Git 版本需 >= 2.0

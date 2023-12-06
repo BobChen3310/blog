@@ -7,21 +7,21 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <copyright>由 BobChen 維護</copyright>
-        <lastBuildDate>Mon, 04 Dec 2023 02:00:00 +0800</lastBuildDate><atom:link href="https://blog.bob0623.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 06 Dec 2023 13:00:00 +0800</lastBuildDate><atom:link href="https://blog.bob0623.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Git</title>
         <link>https://blog.bob0623.com/categories/git/</link>
-        <pubDate>Mon, 04 Dec 2023 02:00:00 +0800</pubDate>
+        <pubDate>Wed, 06 Dec 2023 13:00:00 +0800</pubDate>
         
         <guid>https://blog.bob0623.com/categories/git/</guid>
-        <description>&lt;img src="https://blog.bob0623.com/categories/git/git.png" alt="Featured image of post Git" /&gt;</description>
+        <description>&lt;img src="https://blog.bob0623.com/categories/git/git.svg" alt="Featured image of post Git" /&gt;</description>
         </item>
         <item>
         <title>Service</title>
         <link>https://blog.bob0623.com/categories/service/</link>
-        <pubDate>Mon, 04 Dec 2023 02:00:00 +0800</pubDate>
+        <pubDate>Wed, 06 Dec 2023 13:00:00 +0800</pubDate>
         
         <guid>https://blog.bob0623.com/categories/service/</guid>
-        <description></description>
+        <description>&lt;img src="https://blog.bob0623.com/categories/service/service.png" alt="Featured image of post Service" /&gt;</description>
         </item>
         <item>
         <title>test</title>
