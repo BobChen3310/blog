@@ -360,7 +360,7 @@ protocol bgp dn42_[PEER_NAME]_v6 from dnpeers {
 
 聯絡方式：
 
-- Email: [dn42@bob0623.net](mailto:dn42@bob0623.net)
+- Email: [bobchen3310@bob0623.net](mailto:bobchen3310@bob0623.net)
 
 ## 結語
 
