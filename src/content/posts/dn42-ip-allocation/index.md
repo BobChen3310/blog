@@ -16,9 +16,9 @@ draft: false
 
 我們將使用 Wireguard 與 VPS 建立隧道，並透過該隧道分配 IP 給其他設備及訪問 DN42。
 
-homesrv Wireguard -> VPS -> Wireguard -> Peer -> DN42
+homesrv Wireguard --> VPS --> Wireguard --> Peer --> DN42
 
-VPS wg_clt_dn42: `192.168.50.1/24`
+VPS wg_clt_dn42: `192.168.50.1/24`  
 homesrv wg_clt_dn42: `192.168.50.2/24, 172.21.75.130/27`
 
 ## 開始配置
