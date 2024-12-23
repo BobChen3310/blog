@@ -1,5 +1,5 @@
 ---
-title: 將 DN42 的網段分配給其他設備
+title: DN42 從入坑到放棄 Part 1 - 分配 IP 給其他設備
 published: 2024-12-23
 description: '在上一篇文章我們已經註冊了 DN42 的相關資訊，並宣告了 IP 網段，這次我們要把 IP 網段中的 IP 分給其他設備使用'
 image: ''
