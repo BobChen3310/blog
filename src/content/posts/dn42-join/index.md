@@ -3,7 +3,7 @@ title: DN42 從入坑到放棄
 published: 2024-12-01
 description: 'DN42 是一個去中心化、端到端的網路，透過 VPN 和軟體或硬體 BGP 路由器構建'
 image: ''
-tags: [dn42, vpn, bgp, linux]
+tags: [DN42, VPN, BGP, Linux]
 category: 'Network'
 draft: false
 ---

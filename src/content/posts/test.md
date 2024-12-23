@@ -3,7 +3,7 @@ title: test
 published: 2023-02-15
 description: '這只是一個測試頁面'
 image: ''
-tags: [test]
+tags: [Test]
 category: 'Test'
 draft: false 
 ---
