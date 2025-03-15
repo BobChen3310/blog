@@ -55,7 +55,7 @@ DNS = 192.168.50.1     # 可選，我在 VPS 上建了 DNS 服務進行公網及
 PublicKey = <VPS 的 Wireguard 公鑰>
 PresharedKey = <預共享金鑰>     # 可選
 AllowedIPs = 10.0.0.0/8, 172.20.0.0/14, 172.31.0.0/16, 192.168.50.0/24, fd00::/8, fe80::/64
-Endpoint = srv-a1.bob0623.net:51825
+Endpoint = <VPS 的 IP>:<VPS 的連接埠>
 ```
 
 之後啟動隧道後就可以 Ping 看看 DN42 的服務了
