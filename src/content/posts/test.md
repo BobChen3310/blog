@@ -5,6 +5,7 @@ description: '這只是一個測試頁面'
 image: ''
 tags: [Test]
 category: 'Test'
+lang: 'zh-TW'
 draft: false 
 ---
 

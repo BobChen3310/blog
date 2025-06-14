@@ -5,6 +5,7 @@ description: '在上一篇文章我們已經註冊了 DN42 的相關資訊，並
 image: ''
 tags: [DN42, VPN, BGP, Linux]
 category: 'Network'
+lang: 'zh-TW'
 draft: false
 ---
 

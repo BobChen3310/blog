@@ -5,6 +5,7 @@ description: 'Friends?'
 image: ''
 tags: [Astro, 自定義]
 category: 'Guides'
+lang: 'zh-TW'
 draft: false
 ---
 

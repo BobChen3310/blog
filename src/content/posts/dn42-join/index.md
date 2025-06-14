@@ -5,6 +5,7 @@ description: 'DN42 是一個去中心化、端到端的網路，透過 VPN 和�
 image: ''
 tags: [DN42, VPN, BGP, Linux]
 category: 'Network'
+lang: 'zh-TW'
 draft: false
 ---
 

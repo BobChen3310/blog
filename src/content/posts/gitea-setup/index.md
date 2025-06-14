@@ -5,6 +5,7 @@ description: 'Gitea 是一套極易架設的 Git 服務，在此篇教學我將�
 image: './gitea.svg'
 tags: [Service, Git, Gitea]
 category: 'Guides'
+lang: 'zh-TW'
 draft: false
 ---
 
