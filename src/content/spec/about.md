@@ -6,7 +6,7 @@ Hi，你好！
 # Contact
 
 - Discord: BobChen3310
-- Email: [larry100002586@gmail.com](mailto:larry100002586@gmail.com)
+- Email: [bobchen@bob0623.net](mailto:bobchen@bob0623.net)
 
 # Skills
 
