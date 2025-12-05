@@ -10,10 +10,10 @@ Hi，你好！
 
 # Skills
 
+- C
+- Python
 - Linux
 - Windows Server
-- C++
-- C#
 - Network
 
 ![BobChen3310](https://discord-readme-badge.vercel.app/api?id=476186360844124160)

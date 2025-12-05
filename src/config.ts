@@ -57,14 +57,14 @@ export const profileConfig: ProfileConfig = {
   bio: '一個大學生, 也是個廢柴',
   links: [
     {
-      name: 'Steam',                                      //  Visit https://icones.js.org/ for icon codes
-      icon: 'fa6-brands:steam',                           //  You will need to install the corresponding icon set if it's not already included
-      url: 'https://steamcommunity.com/id/BobChen3310',   //  `pnpm add @iconify-json/<icon-set-name>`
+      name: 'GitHub',                                 //  Visit https://icones.js.org/ for icon codes
+      icon: 'fa6-brands:github',                      //  You will need to install the corresponding icon set if it's not already included
+      url: 'https://github.com/BobChen3310',          //  `pnpm add @iconify-json/<icon-set-name>`
     },
     {
-      name: 'GitHub',
-      icon: 'fa6-brands:github',
-      url: 'https://github.com/BobChen3310',
+      name: 'Telegram',                                       
+      icon: 'fa6-brands:telegram',                            
+      url: 'https://t.me/BobChen3310',                        
     },
   ],
 }

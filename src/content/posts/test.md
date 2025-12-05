@@ -51,12 +51,12 @@ draft: false
 
 打開終端機，輸入 `vim` 以進行編輯。
 
-```c++
-#include <iostream>
-using namespace std;
+```c
+#include <stdio.h>
 
 int main() {
-    cout << "Hello World!!";
+    printf("Hello, World!");
+    return 0;
 }
 ```
 
