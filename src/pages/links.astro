@@ -16,7 +16,6 @@ import MainGridLayout from '../layouts/MainGridLayout.astro'
   },
 ] */
 
-
 const linksPost = await getEntry('spec', 'links')
 const friendItems = [
   {
@@ -25,6 +24,13 @@ const friendItems = [
     desc: '高中學弟 Qian 的 Blog',
     siteurl: 'https://blog.qian30.net/',
     tags: ['朋友!'],
+  },
+  {
+    title: 'AS211749 自治系統',
+    imgurl: 'https://blog.bob0623.net/rr.png',
+    desc: '運營個人自治系統',
+    siteurl: 'https://bgp.tools/as/211749',
+    tags: ['網路維運'],
   },
 ]
 ---
@@ -69,7 +75,7 @@ const friendItems = [
     
     <!-- 下半部：友站連結 -->
     <section>
-      <h2 class="text-xl font-bold mb-4 dark:text-white text-black">友站連結</h2>
+      <h2 class="text-xl font-bold mb-4 dark:text-white text-black">連結</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8 my-4">
         {friendItems.map((item) => (
           <a
