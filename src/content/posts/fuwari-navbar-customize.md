@@ -136,7 +136,3 @@ const { Content } = await friendsPost.render()              // 記得將 aboutPo
 在 `src/content/spec` 中新增 `friends.md`，內容就不打了。
 
 這樣就大功告成了!
-
-## 有用的東西
-
-- [新增 Friends 頁面功能至導航列](https://github.com/BobChen3310/blog/commit/4a845db304e908d30c8f4d5e20a81ff6a0a417ba)
