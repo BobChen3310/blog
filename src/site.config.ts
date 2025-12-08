@@ -159,7 +159,7 @@ const config: SiteConfig = {
   socialLinks: {
     github: 'https://github.com/BobChen3310',
     mastodon: undefined,
-    email: 'mailto:bobchen@bob0623.net',
+    email: 'bobchen@bob0623.net',
     linkedin: undefined,
     bluesky: undefined,
     twitter: undefined,

@@ -26,7 +26,7 @@ homesrv wg_clt_dn42: `192.168.50.2/24, 172.21.75.130/27`
 
 首先在 VPS 上配置 Wireguard 通道：
 
-```conf
+```
 [Interface]
 Address = 192.168.50.1/24
 PrivateKey = <VPS 的 Wireguard 私鑰>
@@ -46,7 +46,7 @@ wg-quick up wg_[隧道名]
 
 接著是 homesrv 的設定，一樣配置 Wireguard 通道：
 
-```conf
+```
 [Interface]
 PrivateKey = <homesrv 的 Wireguard 私鑰>
 Address = 192.168.50.2/24, 172.21.75.130/27
