@@ -60,7 +60,7 @@ esp32-access-system/
 
 ### 2. **電路連接**
 
-![](circuit.png)
+![](./images/circuit.png)
 
 LCD1602 I2C
 - VCC `ESP32 5V`

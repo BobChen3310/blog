@@ -97,19 +97,19 @@ systemctl start gitea
 
 設定想要用的資料庫，我是選擇 SQLite
 
-![](database.png)
+![](./images/database.png)
 
 設定域名及 URL，改為你要用的 (e.g `example.com`)
 
-![](ip.png)
+![](./images/ip.png)
 
 最後選擇管理員帳號，創建一個管理員帳號
 
-![](admin.png)
+![](./images/admin.png)
 
 然後點擊安裝後等待一小段時間就可以使用 Gitea 了 :)
 
-![](menu.png)
+![](./images/menu.png)
 
 之後可以再設定 Nginx 進行反向代理以及 HTTPS 的功能
 

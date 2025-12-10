@@ -242,7 +242,7 @@ ip link set dn42_dummy up
 
 輸入 `wg` 確認隧道狀態，應該會像下圖
 
-![](tunnel.png)
+![](./images/tunnel.png)
 
 接著可以 ping 看看對面
 
@@ -347,7 +347,7 @@ protocol bgp dn42_[PEER_NAME]_v6 from dnpeers {
 
 輸入 `birdc s p` 可查看連線狀況，如果是 `Established` 就代表 Peer 成功了
 
-![](birdstatus.png)
+![](./images/birdstatus.png)
 
 之後就可以 Ping 一下 DN42 裡的服務，如 DNS (172.20.0.53)
 
@@ -361,7 +361,7 @@ protocol bgp dn42_[PEER_NAME]_v6 from dnpeers {
 
 聯絡方式：
 
-- Email: [bobchen3310@bob0623.net](mailto:bobchen3310@bob0623.net)
+- Email: [bobchen@bob0623.net](mailto:bobchen@bob0623.net)
 
 ## 結語
 
