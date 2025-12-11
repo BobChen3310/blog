@@ -238,9 +238,7 @@ CONFIG = {
 
 ## 實作影片
 
-暫時未錄，之後會補上
-
-<!-- <iframe width="85%" height="400" src="" title="" frameborder="0" allowfullscreen></iframe> -->
+<iframe width="85%" height="400" src="https://www.youtube.com/embed/EdsFFSmrGfo" title="ESP32 智慧門禁系統 Demo" frameborder="0" allowfullscreen></iframe>
 
 ## 參考連結
 
