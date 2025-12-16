@@ -3,8 +3,7 @@ title: 快速搭建簡易 Git Server
 published: 2025-12-06
 description: ''
 image: ''
-tags: [Service, Git]
-category: 'Guides'
+tags: [Guides, Service, Git]
 draft: false 
 lang: 'zh-TW'
 ---

@@ -3,8 +3,7 @@ title: 如何用 Gitea 快速建立本地 Git Server
 published: 2023-12-06
 description: 'Gitea 是一套極易架設的 Git 服務，在此篇教學我將會教各位如何安裝 Gitea 並進行一些設定'
 image: './gitea.svg'
-tags: [Service, Git, Gitea]
-category: 'Guides'
+tags: [Guides, Service, Git, Gitea]
 lang: 'zh-TW'
 draft: false
 ---

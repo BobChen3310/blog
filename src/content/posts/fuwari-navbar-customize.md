@@ -3,8 +3,7 @@ title: 如何在 Astro 的 Fuwari 主題中對導覽列新增功能
 published: 2024-10-22
 description: 'Friends?'
 image: ''
-tags: [Astro, 自定義]
-category: 'Guides'
+tags: [Guides, Astro, 自定義]
 lang: 'zh-TW'
 draft: false
 ---
