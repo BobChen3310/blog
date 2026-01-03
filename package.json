@@ -30,6 +30,7 @@
     "astro-expressive-code": "^0.41.3",
     "color": "^5.0.3",
     "date-fns": "^4.1.0",
+    "dayjs": "^1.11.19",
     "emoji-regex": "^10.6.0",
     "gemoji": "^8.1.0",
     "github-slugger": "^2.0.0",
